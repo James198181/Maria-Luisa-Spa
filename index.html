@@ -7,396 +7,373 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2575.7">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
   </style>
 </head>
 <body>
-<p class="p1">&lt;!doctype html&gt;</p>
-<p class="p1">&lt;html lang="es"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;meta charset="utf-8" /&gt;</p>
-<p class="p1">&lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;</p>
-<p class="p1">&lt;title&gt;María Luisa SPA — Bienestar y Relajación&lt;/title&gt;</p>
-<p class="p1">&lt;meta name="description" content="Centro de bienestar integral en Morelia. Masajes relajantes, terapias, aromaterapia, masajes corporativos y paquetes especiales." /&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;!-- Estilos --&gt;</p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>:root{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--beige:#F5EFE6;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--beige-2:#EAE0D4;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--sandy:#D7C2AC;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--brown:#6B4F33;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--brown-dark:#3F2B1A;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--green-1:#0F6B4A;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--green-2:#2E8B57;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--accent:#98C4A6;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--glass: rgba(255,255,255,0.7);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--radius:18px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--maxw:1200px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>--text:#2b2b2b;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>*{box-sizing:border-box}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>html,body{height:100%; margin:0; font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:var(--text); background: linear-gradient(180deg, var(--beige) 0%, #F2EDE6 100%); -webkit-font-smoothing:antialiased}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>a{color:inherit; text-decoration:none}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.container{max-width:var(--maxw); margin:0 auto; padding:28px}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>header{position:sticky; top:0; z-index:60; backdrop-filter: blur(6px); background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.35)); border-bottom:1px solid rgba(0,0,0,0.04)}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.navwrap{display:flex; align-items:center; gap:18px; padding:12px 18px}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.logo-circle{width:64px; height:64px; border-radius:50%; overflow:hidden; display:flex; align-items:center; justify-content:center; border:2px solid rgba(0,0,0,0.06); background:var(--beige-2)}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.logo-circle img{max-width:76%; height:auto; display:block}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>nav{margin-left:8px; flex:1}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.menu{display:flex; gap:16px; align-items:center; justify-content:flex-end}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.menu a{padding:10px 14px; border-radius:12px; font-weight:600; transition:all .22s; color:var(--brown-dark)}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.menu a:hover{background:var(--accent); color:#fff; transform:translateY(-2px)}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.cta{background:var(--green-1); color:white; padding:10px 16px; border-radius:12px}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.hero{display:grid; grid-template-columns:1fr 460px; gap:28px; align-items:center; padding:48px 0}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.65)); border-radius:18px; padding:26px; box-shadow:0 8px 24px rgba(13,22,16,0.06)}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>h1{font-size:34px; margin:0 0 8px; color:var(--brown-dark)}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>p.lead{margin:0 0 18px; color: #4a4a4a}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.hero-visual{border-radius:18px; overflow:hidden; display:flex; align-items:center; justify-content:center; min-height:320px; background:</p>
-<p class="p1"><span class="Apple-converted-space">    </span>linear-gradient(120deg, rgba(16,100,60,0.06), rgba(70,120,80,0.04)); border:1px solid rgba(0,0,0,0.03)}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.btn{display:inline-block; padding:12px 18px; border-radius:12px; font-weight:700; cursor:pointer; transition:all .18s}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.btn:hover{transform:translateY(-3px); box-shadow:0 8px 20px rgba(46,139,87,0.12)}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.btn-outline{background:transparent; border:2px solid var(--brown); color:var(--brown)}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.btn-primary{background:var(--green-2); color:white; border:none}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>/* Services grid */</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.services{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:28px 0}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.card{background:var(--glass); padding:18px; border-radius:14px; border:1px solid rgba(0,0,0,0.03); transition: transform .18s, box-shadow .18s}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.card:hover{transform:translateY(-8px); box-shadow:0 14px 36px rgba(15,80,50,0.08)}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.service-title{display:flex; align-items:center; gap:12px; font-weight:700; margin-bottom:8px}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.tag{background:rgba(0,0,0,0.06); padding:6px 10px; border-radius:999px; font-size:13px}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>/* Responsive */</p>
-<p class="p1"><span class="Apple-converted-space">  </span>@media (max-width:980px){</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero{grid-template-columns:1fr; padding-bottom:14px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.services{grid-template-columns:repeat(2,1fr)}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.menu{display:none}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>@media (max-width:560px){</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.services{grid-template-columns:1fr}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.logo-circle{width:52px;height:52px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h1{font-size:26px}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>/* Gallery */</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.gallery{display:grid; grid-template-columns:2fr 1fr; gap:12px; margin-top:18px}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.gallery img{width:100%; height:100%; object-fit:cover; border-radius:12px}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>/* Contact area */</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.contact-card{display:flex; gap:16px; padding:18px; border-radius:12px; align-items:center; background:linear-gradient(180deg,var(--sandy), var(--beige-2)); border:1px solid rgba(0,0,0,0.03)}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.whatsapp{display:flex; gap:8px; align-items:center; background:var(--green-1); color:white; padding:12px 16px; border-radius:12px; font-weight:700}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>/* Modal */</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.modal{position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(7,10,6,0.45); z-index:200}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.modal.show{display:flex}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.modal-card{background:white; border-radius:14px; padding:20px; width:min(680px,94%); box-shadow:0 22px 60px rgba(10,10,10,0.28)}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>label{display:block; font-size:14px; margin-bottom:6px; font-weight:600}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>input,textarea,select{width:100%; padding:10px 12px; border-radius:10px; border:1px solid rgba(0,0,0,0.08); margin-bottom:12px}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>/* micro interactions: hover color change for buttons (user requested) */</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.btn-outline:hover{background:var(--brown); color:#fff}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.btn-primary:hover{background:var(--green-1)}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>footer{padding:34px 0; color:#555}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.small{font-size:13px; color:#666}</p>
-<p class="p1">&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container navwrap"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="display:flex;align-items:center;gap:14px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="logo-circle" aria-hidden="true"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="images/logo.png" alt="Logo María Luisa SPA" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;strong&gt;María Luisa SPA&lt;/strong&gt;&lt;br&gt;&lt;span class="small"&gt;Bienestar integral · Morelia&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;nav aria-label="Navegación principal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="menu"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#about"&gt;Nosotros&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#services"&gt;Servicios&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#paquetes"&gt;Paquetes&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#gallery"&gt;Galería&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#contact" class="cta"&gt;Contacto&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;main class="container" role="main"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- HERO --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="hero" id="home"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="hero-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Relajación, salud y bienestar integral&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="lead"&gt;Centro de bienestar ubicado en Morelia que ofrece masajes terapéuticos, relajantes y tratamientos corporales personalizados para recuperar equilibrio, energía y serenidad.&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="display:flex; gap:12px; flex-wrap:wrap"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn btn-primary" id="bookBtn"&gt;Reservar ahora&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a href="#services" class="btn btn-outline"&gt;Ver servicios&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Quick highlights --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="display:flex; gap:12px; margin-top:18px; flex-wrap:wrap"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card" style="padding:12px; min-width:170px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="small"&gt;Trato&lt;/div&gt;&lt;strong&gt;Personalizado y cálido&lt;/strong&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="card" style="padding:12px; min-width:170px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="small"&gt;Profesionales&lt;/div&gt;&lt;strong&gt;Terapistas certificados&lt;/strong&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="hero-visual" aria-hidden="true"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="padding:18px; text-align:center;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="images/gallery1.jpg" alt="Espacio María Luisa SPA" style="width:100%; max-height:420px; object-fit:cover; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.06)" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ABOUT --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="about" style="margin-top:18px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="hero-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Quiénes somos&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>María Luisa SPA nace de una historia de esfuerzo, resiliencia y amor por el bienestar. Tras una formación en técnicas de masaje y una experiencia personal que mostró el impacto de las terapias en la calidad de vida, la fundadora creó este espacio para ofrecer relajación, salud y bienestar integral.<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="small"&gt;&lt;em&gt;Contenido tomado del documento de proyecto (historia, misión, visión y valores).&lt;/em&gt; :contentReference[oaicite:2]{index=2}&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="display:flex; gap:12px; margin-top:12px; flex-wrap:wrap"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="flex:1; min-width:220px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h4&gt;Misión&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Brindar experiencias de relajación y bienestar integral con servicios personalizados que promuevan la salud física, emocional y mental.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="flex:1; min-width:220px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h4&gt;Visión&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Ser un espacio donde cada persona encuentre paz, armonía y cuidado personalizado, contribuyendo a una sociedad más saludable.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div style="flex:1; min-width:200px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h4&gt;Valores&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;Bienestar integral&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;Empatía&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;Profesionalismo&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;Confianza&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;Compromiso social&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;Innovación&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- SERVICES --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="services" style="margin-top:22px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Servicios&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="small"&gt;Listado de terapias y masajes ofrecidos en María Luisa SPA. Información tomada del PDF de proyecto. :contentReference[oaicite:3]{index=3}&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="services" aria-live="polite"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Card 1 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card" tabindex="0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="service-title"&gt;&lt;div class="tag"&gt;1&lt;/div&gt;&lt;div&gt;Masaje Relajante&lt;/div&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Suave y envolvente. Alivia el estrés, mejora la circulación y relaja cuerpo y mente. Ideal para descanso profundo.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn btn-outline" data-service="Masaje Relajante"&gt;Más info&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card" tabindex="0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="service-title"&gt;&lt;div class="tag"&gt;2&lt;/div&gt;&lt;div&gt;Masaje Descontracturante&lt;/div&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Técnica profunda que trabaja nudos musculares. Recomendado para tensión acumulada y dolores musculares.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn btn-outline" data-service="Masaje Descontracturante"&gt;Más info&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card" tabindex="0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="service-title"&gt;&lt;div class="tag"&gt;3&lt;/div&gt;&lt;div&gt;Masaje Terapéutico&lt;/div&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Focalizado en zonas con dolor o rigidez. Complemento a tratamientos médicos y fisioterapia.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn btn-outline" data-service="Masaje Terapéutico"&gt;Más info&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card" tabindex="0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="service-title"&gt;&lt;div class="tag"&gt;4&lt;/div&gt;&lt;div&gt;Masaje Deportivo&lt;/div&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Preparación antes del ejercicio y recuperación muscular posterior a entrenamientos intensos.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn btn-outline" data-service="Masaje Deportivo"&gt;Más info&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card" tabindex="0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="service-title"&gt;&lt;div class="tag"&gt;5&lt;/div&gt;&lt;div&gt;Aromaterapia&lt;/div&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Masaje con aceites esenciales para estimular sentidos y equilibrar las emociones. Experiencia sensorial.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn btn-outline" data-service="Masaje con Aromaterapia"&gt;Más info&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card" tabindex="0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="service-title"&gt;&lt;div class="tag"&gt;6&lt;/div&gt;&lt;div&gt;Piedras Calientes&lt;/div&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Piedras volcánicas calientes en puntos clave. Relajación profunda y alivio de tensiones.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn btn-outline" data-service="Masaje con Piedras Calientes"&gt;Más info&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card" tabindex="0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="service-title"&gt;&lt;div class="tag"&gt;7&lt;/div&gt;&lt;div&gt;Lomi-Lomi (Hawaiano)&lt;/div&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Movimiento largo y fluido que simula olas del mar, promueve armonía y renovación.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn btn-outline" data-service="Masaje Lomi-Lomi"&gt;Más info&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card" tabindex="0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="service-title"&gt;&lt;div class="tag"&gt;8&lt;/div&gt;&lt;div&gt;Antiestrés Corporativo&lt;/div&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Sesiones cortas en silla ergonómica para empresas (15–20 minutos) — reduce estrés y mejora rendimiento.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn btn-outline" data-service="Masaje Antiestrés Corporativo"&gt;Más info&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card" tabindex="0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="service-title"&gt;&lt;div class="tag"&gt;9+&lt;/div&gt;&lt;div&gt;Otros tratamientos&lt;/div&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Masaje linfático, reductivo, geriátrico, auriculoterapia, faciales, pies de seda, laminado de cejas, depilación con cera española y paquetes especiales (novias, parejas, cumpleaños, etc.).&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn btn-outline" data-service="Tratamientos adicionales"&gt;Más info&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Gallery --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="gallery" style="margin-top:22px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Galería&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="gallery"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="images/gallery1.jpg" alt="Sala relajación" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="display:grid; grid-auto-rows:1fr; gap:12px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="images/gallery2.jpg" alt="Masaje aromaterapia" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;img src="images/gallery3.jpg" alt="Piedras calientes" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- PACKAGES / Empathy to corporate --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="paquetes" style="margin-top:22px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Paquetes y convenios&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:12px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card" style="flex:1; min-width:220px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h4&gt;Paquetes especiales&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Novias, quinceañeras, parejas, cumpleaños, empleado del mes y familiares. Opciones personalizables.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card" style="flex:1; min-width:220px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h4&gt;Empresas&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Convenios y sesiones corporativas para mejorar bienestar laboral y alineamiento con NOM-035.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- CONTACT --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="contact" style="margin-top:22px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Contacto&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="contact-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="flex:1"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Dirección:&lt;/strong&gt; Gigantes del Parque 127, colonia Eucaliptos, Morelia, Michoacán.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;WhatsApp:&lt;/strong&gt; &lt;a class="whatsapp" href="https://wa.me/524438391999" target="_blank" rel="noopener"&gt;+52 443 839 1999&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Instagram:&lt;/strong&gt; &lt;a href="https://instagram.com/maria_luisa_spa_morelia" target="_blank"&gt;@maria_luisa_spa_morelia&lt;/a&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Facebook:&lt;/strong&gt; Maria Luisa SPA Morelia&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="min-width:220px"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="small"&gt;Reserva rápida&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn btn-primary" id="bookBtn2"&gt;Reservar sesión&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer class="container" role="contentinfo"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;strong&gt;María Luisa SPA&lt;/strong&gt;&lt;br&gt;&lt;span class="small"&gt;Bienestar integral · Morelia&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="small"&gt;© &lt;span id="year"&gt;&lt;/span&gt; María Luisa SPA · Todos los derechos reservados&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Modal para detalles / reserva --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="modal-card" role="document"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button id="closeModal" style="float:right;background:none;border:none;font-weight:700;font-size:18px;cursor:pointer"&gt;✕&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 id="modalTitle"&gt;Reserva&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p id="modalDesc" class="small"&gt;Completa tus datos y nos pondremos en contacto.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;form id="bookingForm"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;Servicio&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input id="svc" type="text" readonly /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;Nombre&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input id="name" required /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;Teléfono / WhatsApp&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input id="phone" required /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;Fecha preferida&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input id="date" type="date" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label&gt;Comentarios&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;textarea id="notes" rows="3"&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="display:flex; gap:8px; justify-content:flex-end"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="button" class="btn btn-outline" id="cancel"&gt;Cancelar&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button type="submit" class="btn btn-primary"&gt;Enviar solicitud&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/form&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- JS --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>// year</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('year').textContent = new Date().getFullYear();</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// modal logic</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const modal = document.getElementById('modal');</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const modalTitle = document.getElementById('modalTitle');</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const modalDesc = document.getElementById('modalDesc');</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const svcInput = document.getElementById('svc');</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const bookingForm = document.getElementById('bookingForm');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function openModal(serviceName = '') {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>modal.classList.add('show');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>modal.setAttribute('aria-hidden','false');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>modalTitle.textContent = serviceName ? 'Reserva — ' + serviceName : 'Reserva';</p>
-<p class="p1"><span class="Apple-converted-space">      </span>svcInput.value = serviceName;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>function closeModal(){</p>
-<p class="p1"><span class="Apple-converted-space">      </span>modal.classList.remove('show');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>modal.setAttribute('aria-hidden','true');</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('bookBtn').addEventListener('click', ()=&gt; openModal(''));</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('bookBtn2').addEventListener('click', ()=&gt; openModal(''));</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('closeModal').addEventListener('click', closeModal);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('cancel').addEventListener('click', closeModal);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>modal.addEventListener('click', (e)=&gt;{ if(e.target === modal) closeModal(); });</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// Service detail buttons</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('[data-service]').forEach(btn=&gt;{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>btn.addEventListener('click', (e)=&gt;{</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const svc = e.currentTarget.getAttribute('data-service');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>openModal(svc);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>});</p>
-<p class="p1"><span class="Apple-converted-space">    </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>bookingForm.addEventListener('submit', (e)=&gt;{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>e.preventDefault();</p>
-<p class="p1"><span class="Apple-converted-space">      </span>// Aquí se puede integrar el envío por API / correo / Google Sheets.</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const payload = {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>servicio: svcInput.value,</p>
-<p class="p1"><span class="Apple-converted-space">        </span>nombre: document.getElementById('name').value,</p>
-<p class="p1"><span class="Apple-converted-space">        </span>telefono: document.getElementById('phone').value,</p>
-<p class="p1"><span class="Apple-converted-space">        </span>fecha: document.getElementById('date').value,</p>
-<p class="p1"><span class="Apple-converted-space">        </span>notas: document.getElementById('notes').value</p>
-<p class="p1"><span class="Apple-converted-space">      </span>};</p>
-<p class="p1"><span class="Apple-converted-space">      </span>// Simulación de envío:</p>
-<p class="p1"><span class="Apple-converted-space">      </span>alert('Solicitud enviada. Nos comunicaremos por WhatsApp pronto.\\n' + JSON.stringify(payload,null,2));</p>
-<p class="p1"><span class="Apple-converted-space">      </span>closeModal();</p>
-<p class="p1"><span class="Apple-converted-space">      </span>bookingForm.reset();</p>
-<p class="p1"><span class="Apple-converted-space">    </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// Smooth scroll for anchor links (simple)</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('a[href^="#"]').forEach(a=&gt;{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>a.addEventListener('click', function(e){</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const target = document.querySelector(this.getAttribute('href'));</p>
-<p class="p1"><span class="Apple-converted-space">        </span>if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }</p>
-<p class="p1"><span class="Apple-converted-space">      </span>});</p>
-<p class="p1"><span class="Apple-converted-space">    </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// Improve accessibility: focus trap minimal (optional)</p>
-<p class="p1"><span class="Apple-converted-space">    </span>// (Se puede mejorar con librería para trap focus)</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="es"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;María Luisa SPA - Bienestar Integral&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>:root {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>/* Colores: verde claro de fondo y verde oscuro para texto */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--color-light-green: #F0FDF4;<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--color-dark-green: #064E3B;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--color-medium-green: #A7F3D0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--color-accent: #34D399;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--color-dark-green);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: var(--color-light-green);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>scroll-behavior: smooth;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.playfair {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Playfair Display', serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.btn-hover-effect {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease-in-out;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.btn-hover-effect:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transform: translateY(-2px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: var(--color-accent);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--color-dark-green);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-hover-effect {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-hover-effect:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transform: scale(1.03);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body class="bg-green-50 text-green-900"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Header y Navegación --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;header class="bg-green-50/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-lg"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;nav class="container mx-auto px-4 py-4 flex items-center justify-between"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center space-x-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;!-- Se agrega el logo real de la empresa --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;img src="LOGO MARIA LUISA verde chico.jpg" alt="María Luisa SPA Logo" class="w-20 h-20 object-cover"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#" class="text-3xl font-bold playfair text-green-900 hidden md:block"&gt;María Luisa SPA&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center space-x-6 md:space-x-10"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#quienes-somos" class="text-sm md:text-base font-medium hover:text-green-700 transition-colors"&gt;Quiénes Somos&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#servicios" class="text-sm md:text-base font-medium hover:text-green-700 transition-colors"&gt;Servicios&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#precios" class="text-sm md:text-base font-medium hover:text-green-700 transition-colors"&gt;Precios&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#contacto" class="text-sm md:text-base font-medium hover:text-green-700 transition-colors"&gt;Contacto&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/nav&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;main class="pt-24"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Sección Hero --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section class="relative w-full h-[80vh] flex items-center justify-center text-center text-white" style="background: url('PHOTO-2025-07-25-19-50-32.jpg') no-repeat center center/cover;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="absolute inset-0 bg-green-950/50"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="relative z-10 px-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h1 class="text-4xl md:text-6xl font-bold playfair"&gt;Relajación, Salud y Bienestar Integral&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="mt-4 md:text-xl font-light max-w-2xl mx-auto"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>Un espacio donde tu cuerpo y tu mente se renuevan por completo.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#servicios" class="mt-8 inline-block px-8 py-3 bg-green-800 text-green-50 rounded-full font-semibold btn-hover-effect"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>Descubre Nuestros Servicios</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Sección Quiénes Somos --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="quienes-somos" class="container mx-auto px-4 py-16 md:py-24"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="grid md:grid-cols-2 gap-12 items-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="space-y-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h2 class="text-3xl md:text-4xl font-bold playfair border-b-2 border-green-800 pb-2"&gt;¿Quiénes Somos?&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-lg"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>María Luisa SPA nació de una historia de esfuerzo, resiliencia y amor por el bienestar. Su fundadora, tras enfrentar desafíos personales y profesionales, encontró en el masaje terapéutico una vocación y un compromiso profundo.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-lg"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>De esa experiencia, surgió la misión de ofrecer espacios y tratamientos que brinden relajación, salud y bienestar integral, para que cada persona que nos visite recupere equilibrio, energía y serenidad.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="mt-8 grid sm:grid-cols-2 gap-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="p-6 bg-green-100 rounded-xl shadow-md card-hover-effect"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h3 class="font-bold playfair text-xl text-green-800"&gt;Nuestra Misión&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="mt-2 text-sm text-green-700"&gt;Brindar experiencias de relajación y bienestar integral a través de terapias y servicios personalizados.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="p-6 bg-green-100 rounded-xl shadow-md card-hover-effect"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h3 class="font-bold playfair text-xl text-green-800"&gt;Nuestra Visión&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="mt-2 text-sm text-green-700"&gt;Consolidarnos como un espacio donde cada persona encuentre paz, armonía y cuidado personalizado.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="relative h-[500px] rounded-2xl shadow-xl overflow-hidden"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;img src="PHOTO-2025-07-25-19-50-32 2.jpg" alt="Terapia de masaje en la espalda" class="w-full h-full object-cover"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Sección de Servicios --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="servicios" class="bg-green-100 py-16 md:py-24"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="container mx-auto px-4 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl md:text-4xl font-bold playfair border-b-2 border-green-800 inline-block pb-2"&gt;Nuestros Servicios&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="mt-4 text-lg max-w-3xl mx-auto"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>Explora nuestra amplia gama de terapias diseñadas para renovar tu cuerpo y mente. Desde masajes relajantes hasta tratamientos complementarios, cada servicio es una experiencia única y personalizada.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;!-- Grid de Masajes --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Servicio 1: Masaje Relajante --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-green-50 p-6 rounded-2xl shadow-md card-hover-effect text-left"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-bold playfair text-xl text-green-800"&gt;Masaje Relajante&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-2 text-sm text-green-700"&gt;Suave y envolvente. Alivia el estrés, mejora la circulación y relaja cuerpo y mente. Ideal para quienes buscan descanso profundo.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Servicio 2: Masaje Descontracturante --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-green-50 p-6 rounded-2xl shadow-md card-hover-effect text-left"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-bold playfair text-xl text-green-800"&gt;Masaje Descontracturante&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-2 text-sm text-green-700"&gt;Técnica profunda que trabaja sobre nudos musculares. Recomendado para personas con tensión acumulada o dolores musculares.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Servicio 3: Masaje Terapéutico --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-green-50 p-6 rounded-2xl shadow-md card-hover-effect text-left"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-bold playfair text-xl text-green-800"&gt;Masaje Terapéutico&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-2 text-sm text-green-700"&gt;Focalizado en zonas específicas con dolor o rigidez. Complementa tratamientos médicos.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Servicio 4: Masaje Deportivo --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-green-50 p-6 rounded-2xl shadow-md card-hover-effect text-left"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-bold playfair text-xl text-green-800"&gt;Masaje Deportivo&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-2 text-sm text-green-700"&gt;Prepara el cuerpo antes del ejercicio o ayuda en la recuperación muscular después de entrenamientos intensos.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Servicio 5: Masaje con Aromaterapia --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-green-50 p-6 rounded-2xl shadow-md card-hover-effect text-left"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-bold playfair text-xl text-green-800"&gt;Masaje con Aromaterapia&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-2 text-sm text-green-700"&gt;Incorpora aceites esenciales para estimular los sentidos y equilibrar las emociones. Una experiencia sensorial.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Servicio 6: Masaje con Piedras Calientes --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-green-50 p-6 rounded-2xl shadow-md card-hover-effect text-left"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-bold playfair text-xl text-green-800"&gt;Masaje con Piedras Calientes&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-2 text-sm text-green-700"&gt;Relajación profunda y alivio de tensiones físicas y emocionales mediante piedras volcánicas calientes.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Servicio 7: Masaje Lomi-Lomi --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-green-50 p-6 rounded-2xl shadow-md card-hover-effect text-left"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-bold playfair text-xl text-green-800"&gt;Masaje Lomi-Lomi&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-2 text-sm text-green-700"&gt;Movimiento largo, fluido y rítmico que promueve una sensación de armonía y renovación.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Servicio 8: Masaje Antiestrés Corporativo --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-green-50 p-6 rounded-2xl shadow-md card-hover-effect text-left"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-bold playfair text-xl text-green-800"&gt;Masaje Antiestrés Corporativo&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-2 text-sm text-green-700"&gt;Sesiones cortas de 15-20 minutos en silla ergonómica. Reduce estrés y mejora el rendimiento laboral.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Servicio 9: Masaje Linfático --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-green-50 p-6 rounded-2xl shadow-md card-hover-effect text-left"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-bold playfair text-xl text-green-800"&gt;Masaje Linfático&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-2 text-sm text-green-700"&gt;Estimula el sistema linfático para eliminar toxinas y reducir inflamación. Ideal para retención de líquidos.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Servicio 10: Masaje Reductivo --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-green-50 p-6 rounded-2xl shadow-md card-hover-effect text-left"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-bold playfair text-xl text-green-800"&gt;Masaje Reductivo&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-2 text-sm text-green-700"&gt;Técnica vigorosa enfocada en áreas con grasa localizada, complementada con productos reafirmantes.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Servicio 11: Masaje Geriátrico --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-green-50 p-6 rounded-2xl shadow-md card-hover-effect text-left"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-bold playfair text-xl text-green-800"&gt;Masaje Geriátrico&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-2 text-sm text-green-700"&gt;Ayuda a mejorar la movilidad, disminuir dolores, estimular la circulación y recuperar energía en adultos mayores.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Servicio 12: Otros Servicios --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-green-50 p-6 rounded-2xl shadow-md card-hover-effect text-left"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="font-bold playfair text-xl text-green-800"&gt;Otros Servicios&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;ul class="mt-2 text-sm text-green-700 list-disc list-inside"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Auriculoterapia&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Tratamientos faciales&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Pies de seda&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Laminado de cejas&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Depilación con cera española&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Sección de Precios --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="precios" class="container mx-auto px-4 py-16 md:py-24"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl md:text-4xl font-bold playfair border-b-2 border-green-800 inline-block pb-2"&gt;Lista de Precios&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="mt-8 grid md:grid-cols-2 gap-12"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-semibold playfair mb-4 text-green-800"&gt;Masajes&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;ul class="space-y-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Masaje Relajante&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$390.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Tensión Muscular&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$410.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Terapéutico Analgésico&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$350.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Deportivo&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$350.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Aromaterapia&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$390.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Antiestrés Corporativo&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$200.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Linfático&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$600.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Reductivo&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$650.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Geriátrico&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$499.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Piedras Calientes&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$700.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Profundo&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$600.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-semibold playfair mb-4 text-green-800"&gt;Otros Servicios&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;ul class="space-y-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Pies de Porcelana&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$350.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Espalda de Porcelana&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$699.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Manos de Porcelana&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$280.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Laminado de Ceja&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$199.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Depilación Española&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$80.00 - $370.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Tratamientos Faciales&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$350.00 - $490.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-semibold playfair mb-4 mt-8 text-green-800"&gt;Terapias Complementarias&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;ul class="space-y-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Auriculoterapia&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$210.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Reflexología Podal&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$280.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li class="flex justify-between items-center bg-green-100 p-4 rounded-xl shadow-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-medium"&gt;Yoga Facial&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-lg"&gt;$210.00&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Sección de Testimonios --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section class="bg-green-100 py-16 md:py-24"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="container mx-auto px-4 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl md:text-4xl font-bold playfair border-b-2 border-green-800 inline-block pb-2"&gt;Lo que dicen quienes nos visitan&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="mt-8 grid md:grid-cols-3 gap-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-green-50 p-8 rounded-2xl shadow-md card-hover-effect"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="italic text-green-800"&gt;"El trato es tan personalizado y cálido que te sientes bienvenida desde el primer momento. Las instalaciones son impecables y la atención es profesional."&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-4 font-semibold text-green-900"&gt;- Cliente Satisfecho&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-green-50 p-8 rounded-2xl shadow-md card-hover-effect"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="italic text-green-800"&gt;"No solo es relajación profunda, sino una mejora real en la salud física y un descanso mental que me ayuda a liberar el estrés."&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-4 font-semibold text-green-900"&gt;- Cliente Satisfecho&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-green-50 p-8 rounded-2xl shadow-md card-hover-effect"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="italic text-green-800"&gt;"La calidez humana y el ambiente armonioso que se respira en María Luisa SPA es lo que me hace regresar. Es un espacio de renovación total."&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-4 font-semibold text-green-900"&gt;- Cliente Satisfecho&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Sección de Contacto --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="contacto" class="container mx-auto px-4 py-16 md:py-24"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="grid md:grid-cols-2 gap-12 items-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="space-y-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h2 class="text-3xl md:text-4xl font-bold playfair border-b-2 border-green-800 pb-2"&gt;Contáctanos&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-lg"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>Estamos listos para brindarte una experiencia de bienestar única. Ponte en contacto con nosotros para agendar tu cita o resolver cualquier duda.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;ul class="space-y-4 text-lg"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-green-900"&gt;WhatsApp:&lt;/span&gt; 4438 39 1999</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-green-900"&gt;Instagram:&lt;/span&gt; maria_luisa_spa_morelia</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-green-900"&gt;Facebook:&lt;/span&gt; Maria Luisa SPA Morelia</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-green-900"&gt;Dirección:&lt;/span&gt; Gigantes del Parque 127, colonia Eucaliptos, Morelia, Michoacán</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="relative h-[400px] rounded-2xl shadow-xl overflow-hidden"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Mapa interactivo de Google Maps --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;iframe<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.289437996515!2d-101.19694408453488!3d19.683611132649033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d07e2c90c7657%3A0xc3b8a6d6e246e7f2!2sGigantes%20del%20Parque%20127%2C%20Eucaliptos%2C%2058140%20Morelia%2C%20Mich.!5e0!3m2!1ses-419!2smx!4v1625076451670!5m2!1ses-419!2smx"<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>width="100%"<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>height="100%"<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>style="border:0;"<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>allowfullscreen=""<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>loading="lazy"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>class="rounded-2xl"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/iframe&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Footer --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;footer class="bg-green-100 text-green-900 py-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-4 text-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;&amp;copy; 2024 María Luisa SPA. Todos los derechos reservados.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Scripts del bot --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js" defer&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://files.bpcontent.cloud/2025/08/09/06/20250809061655-RVCB2202.js" defer&gt;&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
 </body>
 </html>
